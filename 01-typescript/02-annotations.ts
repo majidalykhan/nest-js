@@ -55,3 +55,8 @@ for (let i = 0; i < numbersArray.length; i++) {
     numberAboveZero = numbersArray[i];
   }
 }
+
+//More annotations around functions
+const add = (x: number, y: number): number => {
+  return x + y;
+};
