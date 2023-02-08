@@ -1,5 +1,6 @@
 //Inferences - Typescript guesses the types
 //Use inference as much as possible
+//Works if declaration and initialization are on the same line
 
 //Variables
 let flowers = 10;

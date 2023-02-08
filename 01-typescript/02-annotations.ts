@@ -35,3 +35,13 @@ const logNumber: (i: number) => void = (i: number) => {
 const json = '{"x":10, "y":20}';
 const coordinates: { x: number; y: number } = JSON.parse(json);
 console.log(coordinates);
+
+//2: When we delare a variable on one line and initialize on other line
+let nums = [1, 2, 3, 4];
+let foundNum: boolean;
+
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] === 3) {
+    foundNum = true;
+  }
+}
