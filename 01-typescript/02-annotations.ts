@@ -19,7 +19,7 @@ class Car {}
 let car: Car = new Car();
 
 //Object literal
-let coordinates: { lat: number; long: number } = {
+let coord: { lat: number; long: number } = {
   lat: 10,
   long: 20,
 };
@@ -28,3 +28,10 @@ let coordinates: { lat: number; long: number } = {
 const logNumber: (i: number) => void = (i: number) => {
   console.log(i);
 };
+
+//When to use annotations
+
+//1: Function that returns the 'any' type
+const json = '{"x":10, "y":20}';
+const coordinates = JSON.parse(json);
+console.log(coordinates);
