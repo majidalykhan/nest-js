@@ -45,3 +45,13 @@ for (let i = 0; i < nums.length; i++) {
     foundNum = true;
   }
 }
+
+//3: Variable whose type cannot be inferred
+let numbersArray = [-10, -5, 7];
+let numberAboveZero: boolean | number = false;
+
+for (let i = 0; i < numbersArray.length; i++) {
+  if (numbersArray[i] > 0) {
+    numberAboveZero = numbersArray[i];
+  }
+}
