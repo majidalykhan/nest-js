@@ -64,3 +64,22 @@ const add = (x: number, y: number): number => {
 const logger = (message: string): void => {
   console.log(message);
 };
+
+//Destructuring annotations
+const todaysWeather = {
+  date: new Date(),
+  weather: "cloudy",
+};
+
+const logWeather = ({
+  date,
+  weather,
+}: {
+  date: Date;
+  weather: string;
+}): void => {
+  console.log(date);
+  console.log(weather);
+};
+
+logWeather(todaysWeather);
