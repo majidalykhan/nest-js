@@ -27,3 +27,7 @@ let axis: { x; y } = {
 const writeName = (i: string) => {
   console.log(i);
 };
+
+const sum = (x: number, y: number) => {
+  return x + y;
+};
