@@ -60,3 +60,7 @@ for (let i = 0; i < numbersArray.length; i++) {
 const add = (x: number, y: number): number => {
   return x + y;
 };
+
+const logger = (message: string): void => {
+  console.log(message);
+};
