@@ -1,3 +1,5 @@
+//Annotations - Developers tell typescript the types
+
 //Variables
 
 let cars: number = 10;
