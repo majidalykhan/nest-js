@@ -83,3 +83,21 @@ const logWeather = ({
 };
 
 logWeather(todaysWeather);
+
+//Anotations around objects
+const carObj = {
+  manufacture: "Honda",
+  model: 2020,
+  colors: {
+    color1: "red",
+    color2: "black",
+  },
+  setModel(model: number): void {
+    this.model = model;
+  },
+};
+
+const { model }: { model: number } = carObj;
+const {
+  colors: { color1, color2 },
+}: { colors: { color1: string; color2: string } } = carObj;
