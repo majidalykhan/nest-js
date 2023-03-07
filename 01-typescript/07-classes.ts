@@ -8,16 +8,20 @@ class Vehicle {
 
 const vehicle = new Vehicle("black");
 
-// class Car extends Vehicle {
-//   private drive(): void {
-//     console.log("Honda Accord");
-//   }
+class Car extends Vehicle {
+  constructor(public wheels: number, color: string) {
+    super(color);
+  }
 
-//   startDrivingProcess(): void {
-//     this.drive();
-//     this.honk();
-//   }
-// }
+  private drive(): void {
+    console.log("Honda Accord");
+  }
 
-// const car = new Car();
-// car.startDrivingProcess();
+  startDrivingProcess(): void {
+    this.drive();
+    this.honk();
+  }
+}
+
+const car = new Car(4, "blue");
+car.startDrivingProcess();
