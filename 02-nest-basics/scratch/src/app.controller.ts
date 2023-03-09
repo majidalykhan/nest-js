@@ -1,9 +1,14 @@
 import { Controller, Get } from "@nestjs/common";
 
-@Controller()
+@Controller("/api")
 export class AppController {
-  @Get()
+  @Get("/welcome")
   getRootRoute() {
     return "Hi there!";
+  }
+
+  @Get("/bye")
+  getByeRoute() {
+    return "Bye!";
   }
 }
